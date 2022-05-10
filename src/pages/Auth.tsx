@@ -29,9 +29,7 @@ export const Auth = () => {
       .required("Obrigatório"),
   });
 
-  interface FormValid extends Yup.InferType<typeof formInitialValues> {}
-
-  const formSubmit = (values: FormValid, { setSubmitting }: any) => {
+  const formSubmit = (values: any, { setSubmitting }: any) => {
     setTimeout(() => {
       setSubmitting(false);
     }, 400);
