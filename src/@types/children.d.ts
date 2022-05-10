@@ -1,3 +1,3 @@
 type ChildrenProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };

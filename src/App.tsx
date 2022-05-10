@@ -18,11 +18,11 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-slate-200 h-screen relative">
       <Navbar />
       <Sidebar />
       <Outlet />
-    </>
+    </div>
   );
 }
 export default App;
