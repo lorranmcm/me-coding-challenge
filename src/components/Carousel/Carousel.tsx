@@ -2,7 +2,7 @@ import { Slider } from "./Slider";
 
 export function Carousel({ objects }: CarouselProps) {
   return (
-    <div className="carousel w-full h-80">
+    <div className="carousel w-full h-full">
       {objects.map((object: any, index: number) => (
         <Slider
           key={index}
