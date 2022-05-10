@@ -11,12 +11,15 @@ import {
 
 export function Sidebar() {
   return (
-    <aside className="w-72 h-full -top-0" aria-label="Sidebar">
-      <div className="h-full overflow-y-auto p-6 bg-gray-500">
+    <aside
+      className="lg:w-24 xl:w-1/4 h-full top-0 group lg:hover:w-96 transition-all duration-400 linear"
+      aria-label="Sidebar"
+    >
+      <div className="h-full overflow-y-auto pl-4 bg-gray-500">
         <ul className="space-y-4">
           <li>
             <IconLink
-              className="text-gray-200 hover:text-white hover:bg-gray-600 p-2 rounded-md"
+              className="text-gray-200 hover:text-white p-2"
               iconClasses="mr-4 w-8 h-8"
               href="#"
               icon={faHouseChimney}
@@ -25,7 +28,7 @@ export function Sidebar() {
           </li>
           <li>
             <IconLink
-              className="text-gray-200 hover:text-white hover:bg-gray-600 p-2 rounded-md"
+              className="text-gray-200 hover:text-white p-2"
               iconClasses="mr-4 w-8 h-8"
               href="#"
               icon={faBarsProgress}
@@ -34,7 +37,7 @@ export function Sidebar() {
           </li>
           <li>
             <IconLink
-              className="text-gray-200 hover:text-white hover:bg-gray-600 p-2 rounded-md"
+              className="text-gray-200 hover:text-white p-2"
               iconClasses="mr-4 w-8 h-8"
               href="#"
               icon={faDollar}
@@ -43,7 +46,7 @@ export function Sidebar() {
           </li>
           <li>
             <IconLink
-              className="text-gray-200 hover:text-white hover:bg-gray-600 p-2 rounded-md"
+              className="text-gray-200 hover:text-white p-2"
               iconClasses="mr-4 w-8 h-8"
               href="#"
               icon={faCartShopping}
@@ -52,7 +55,7 @@ export function Sidebar() {
           </li>
           <li>
             <IconLink
-              className="text-gray-200 hover:text-white hover:bg-gray-600 p-2 rounded-md"
+              className="text-gray-200 hover:text-white p-2"
               iconClasses="mr-4 w-8 h-8"
               href="#"
               icon={faEarthAmerica}
@@ -61,7 +64,7 @@ export function Sidebar() {
           </li>
           <li>
             <IconLink
-              className="text-gray-200 hover:text-white hover:bg-gray-600 p-2 rounded-md"
+              className="text-gray-200 hover:text-white p-2"
               iconClasses="mr-4 w-8 h-8"
               href="#"
               icon={faTags}
@@ -70,7 +73,7 @@ export function Sidebar() {
           </li>
           <li>
             <IconLink
-              className="text-gray-200 hover:text-white hover:bg-gray-600 p-2 rounded-md"
+              className="text-gray-200 hover:text-white p-2"
               iconClasses="mr-4 w-8 h-8"
               href="#"
               icon={faQuestionCircle}

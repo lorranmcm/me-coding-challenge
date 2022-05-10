@@ -19,7 +19,9 @@ export const IconLink: React.FC<PropsIconLink> = ({
   return (
     <a className={`${className} flex items-center`} href={href}>
       <FontAwesomeIcon className={iconClasses} icon={icon} />
-      {text}
+      <span className="flex items-center h-16 sm:max-w-0 xl:max-w-xl overflow-hidden sm:group-hover:max-w-xl md:group-hover:max-w-xl lg:group-hover:max-w-xl transition-all duration-400 linear">
+        <span>{text}</span>
+      </span>
     </a>
   );
 };
