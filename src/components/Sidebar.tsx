@@ -11,8 +11,8 @@ import {
 
 export function Sidebar() {
   return (
-    <aside className="z-0 absolute w-72 h-full -top-0" aria-label="Sidebar">
-      <div className="h-full overflow-y-auto py-24 px-3 bg-gray-500">
+    <aside className="w-72 h-full -top-0" aria-label="Sidebar">
+      <div className="h-full overflow-y-auto p-6 bg-gray-500">
         <ul className="space-y-4">
           <li>
             <IconLink

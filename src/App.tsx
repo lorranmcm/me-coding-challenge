@@ -18,10 +18,14 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-slate-200 h-screen relative">
+    <div className="bg-slate-200 h-screen flex flex-col">
       <Navbar />
-      <Sidebar />
-      <Outlet />
+      <div className="flex flex-row h-full">
+        <Sidebar />
+        <div className="w-full px-8 py-6">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 }
