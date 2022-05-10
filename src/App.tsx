@@ -22,7 +22,7 @@ function App() {
       <Navbar />
       <div className="flex flex-row h-full">
         <Sidebar />
-        <div className="w-full px-8 py-6">
+        <div className="h-full w-full mx-8 my-6">
           <Outlet />
         </div>
       </div>

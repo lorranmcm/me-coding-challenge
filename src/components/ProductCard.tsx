@@ -13,11 +13,11 @@ export function ProductCard({
         <span className="font-bold">{barCode}</span>
         <img className="h-32 w-32 bg-cover" src={image} alt={description} />
         <p>{description}</p>
-        <span className="text-5xl font-bold">{price}</span>
+        <span className="text-5xl font-bold pb-4">{price}</span>
       </div>
       <a
         href="#"
-        className="flex flex-row items-center justify-center bg-blue-400 text-white h-12 px-4 shadow-sm gap-2 font-semibold"
+        className="flex flex-row items-center justify-center bg-blue-400 text-white h-12 px-4 py-2 shadow-sm gap-2 font-semibold"
       >
         <FontAwesomeIcon icon={faShoppingCart} />
         CARRINHO

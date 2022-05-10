@@ -3,7 +3,7 @@ import image2 from "../assets/img-mock-2.jpg";
 import image3 from "../assets/img-mock-3.jpg";
 import shopping from "../assets/shopping.png";
 import { ProductCard } from "../components/ProductCard";
-import { RCalendar } from "../components/RCalendar";
+import { RCalendar } from "../components/Calendar/RCalendar";
 import { Carousel } from "../components/Carousel/Carousel";
 
 const carouselImages: SliderProps[] = [
@@ -35,12 +35,12 @@ const products: ProductCardProps[] = [
 
 export function Home() {
   return (
-    <div className="flex flex-col gap-6 h-full ">
-      <div className="flex flex-row gap-6 h-2/5 pb-2">
+    <div className="flex flex-col gap-6 h-full">
+      <div className="flex flex-row gap-6 h-2/5 max-h-96 pb-2">
         <Carousel objects={carouselImages} />
         <RCalendar />
       </div>
-      <div className="flex flex-row items-stretch gap-6 h-2/5">
+      <div className="flex flex-row items-stretch gap-6 h-3/5 max-h-96">
         {products.map((object: ProductCardProps, index: number) => (
           <ProductCard
             key={index}
